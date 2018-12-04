@@ -1,2 +1,0 @@
-# delmanika.github.io
-DELTA SIGMA ELKTRONIKA COMMUNITY

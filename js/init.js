@@ -17,7 +17,7 @@ $(document).ready(function() {
   function slideCarouselToday() {
       k = setInterval(function(){
         $('.carousel.carousel-slider.today').carousel('next');
-      },6000);
+      },7000);
 
       $('.carousel.carousel-slider.today').mouseenter(function(event) {
         clearInterval(k);

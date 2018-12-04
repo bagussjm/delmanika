@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Visioner Asset Management System</title>
+
+  <!-- title icon -->
+  <link rel="shorcut icon" href="title.png">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body >
+
+  <!-- menu navigation -->
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo"><i class="large material-icons teal-text" style="font-size : 40px;">cast_connected</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html"><p>HOME</p></a></li>
+          <li><a href="about.html"><p>TENTANG KAMI</p></a></li>
+          <li><a href="contact.html"><p>KONTAK</p></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- header container -->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center black-text text-lighten-2 light">Produk Kami</h1>
+          <div class="row center">
+            <h5 class="header black-text col s12 light">Yang anda butuhkan</h5>
+          </div>
+        </div>
+      </div>
+
+    <div class="parallax"><img src="images/produk.jpg" alt="Unsplashed background img 1" style="transform: translate3d(-50%, 143.42px, 0px); opacity: 1;"></div>
+  </div>
+
+  <!-- Produk yang kami sajikan -->
+  <div class="container"  >
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 >Klik untuk melihat detail</h4>
+
+          <!-- image desc -->
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/manajemenaset.jpg">
+              </div>
+              <div class="card-content">
+
+                <h5><a href="vams.html" class="teal-text bold ">Visioner Asset Management System</a></h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- image desc -->
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/logistik.png">
+              </div>
+              <div class="card-content">
+
+                <h5><a href="tlms.html" class="teal-text bold">Tracklo Logistic Management System</a></h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- image desc -->
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/training.png">
+              </div>
+              <div class="card-content">
+
+                <h5><a href="#" class="teal-text bold">Training</a></h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+<!-- footer -->
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text" style="font-weight:100">Delmanika Asset Management System</h5>
+          <p class="grey-text text-lighten-4">Kami adalah sekelompok orang yang bercita-cita mengingkatkan kualitas organisasi di dalam negeri.</p>
+        </div>
+
+
+        <div class="col l5 s12 right">
+          <h5 class="white-text light">Alamat</h5>
+
+          <p class="light">Jl. HR. Soebrantas Panam, Sidomulyo Barat., Tampan, Kota Pekanbaru, Riau 28294</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      &copy;2018 Delmanika Pekanbaru
+      <!-- <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(function() {
+        $('.card').hover(
+            function() {
+                $(this).find('> .card-image > img.activator').click();
+            }, function() {
+                $(this).find('> .card-reveal > .card-title').click();
+            }
+        );
+      });
+    });
+  </script>
+
+  </body>
+</html>
