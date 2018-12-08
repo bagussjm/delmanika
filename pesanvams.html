@@ -4,7 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Visioner Asset Management System</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- title icon -->
     <link rel="shorcut icon" href="title.png">
 
@@ -32,21 +33,325 @@
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
-            <h1 class="header center black-text text-lighten-2 light">Form Pemesanan</h1>
-            <div class="row center">
-                <h5 class="header black-text col s12">Isi data dibawah ini untuk melengkapi pemesanan</h5>
-            </div>
+            <h1 class="header center black-text text-lighten-2 light">Daftar Harga dan Form Pemesanan</h1>
         </div>
+        <div class="row center">
+                <h5 class="header black-text col s12">Berikut Harga Pemasangan</h5>
+            </div>
     </div>
     <div class="parallax"><img src="images/kontak.jpg" alt="Unsplashed background img 2"></div>
 </div>
 
 <div class="container">
     <div class="row">
-        <div class="col m3">
+    	<div class="col s12 m12 center" id="customers">
+    		<table class="responsive-table card-panel grey lighten-3">
+				        <thead>
+				          <tr>
+				              <th>No</th>
+				              <th>Komponen</th>
+				              <th>Jumlah</th>
+				              <th>Harga</th>
+				              <th>Total Harga</th>
+				          </tr>
+				        </thead>
+
+				        <tbody>
+				          <tr>
+				            <td></td>
+				            <td><b>Hardware</b></td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				        </tbody>
+
+				        <tbody>
+				          <tr>
+				            <td>1</td>
+				            <td>Mini PC</td>
+				            <td>10</td>
+				            <td>Rp. 900.000</td>
+				            <td>Rp. 9.000.000</td>
+				          </tr>
+				          <tr>
+				            <td>2</td>
+				            <td>RFID Tag</td>
+				            <td>100</td>
+				            <td>Rp. 50.000</td>
+				            <td>Rp. 5.000.000</td>
+				          </tr>
+				          <tr>
+				            <td>3</td>
+				            <td>RFID Reader</td>
+				            <td>10</td>
+				            <td>Rp. 150.000</td>
+				            <td>Rp. 1.500.000</td>
+				          </tr>
+				          <tr>
+				            <td>4</td>
+				            <td>SIM Card (Paket Data 15GB)</td>
+				            <td>10</td>
+				            <td>Rp. 120.000</td>
+				            <td>Rp. 1.200.000</td>
+				          </tr>
+				          <tr>
+				            <td>5</td>
+				            <td>Printer RFID Label</td>
+				            <td>1</td>
+				            <td>Rp. 3.000.000</td>
+				            <td>Rp. 3.000.000</td>
+				          </tr>
+				          <tr>
+				            <td>6</td>
+				            <td>Server + License</td>
+				            <td>1</td>
+				            <td>Rp. 15.000.000</td>
+				            <td>Rp. 15.000.000</td>
+				          </tr>
+				          <tr>
+				            <td>7</td>
+				            <td>RFID Writer</td>
+				            <td>1</td>
+				            <td>Rp. 6.500.000</td>
+				            <td>Rp. 6.500.000</td>
+				          </tr>
+				        </tbody>
+
+				        <tbody>
+				          <tr>
+				            <td></td>
+				            <td><b>Total</b></td>
+				            <td></td>
+				            <td></td>
+				            <td><b>Rp. 41.200.000</b></td>
+				          </tr>
+				        </tbody>
+
+				        <tbody>
+				          <tr>
+				            <td></td>
+				            <td><b>Software</b></td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				        </tbody>
+  
+				        <tbody>
+				          <tr>
+				            <td>1</td>
+				            <td>Delmanika Desktop Model</td>
+				            <td>1</td>
+				            <td>Rp. 50.000.000</td>
+				            <td>Rp. 50.000.000</td>
+				          </tr>
+				          <tr>
+				            <td>2</td>
+				            <td>Delmanika Mobile Model</td>
+				            <td>1</td>
+				            <td>Rp. 30.000</td>
+				            <td>Rp. 30.000.000.000</td>
+				          </tr>
+				        </tbody>
+				        
+				        <tbody>
+				          <tr>
+				            <td></td>
+				            <td><b>Total</b></td>
+				            <td></td>
+				            <td></td>
+				            <td><b>Rp. 80.000.000</b></td>
+				          </tr>
+				        </tbody>
+
+				        <tbody>
+				        	<tr>
+				            <td></td>
+				            <td><b>Instalasi RFID Reader di beberapa kota</b></td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				          <tr>
+				            <td>1</td>
+				            <td>Aceh</td>
+				            <td>1</td>
+				            <td>Rp. 1.500.000</td>
+				            <td>Rp. 1.500.000</td>
+				          </tr>
+				          <tr>
+				            <td>2</td>
+				            <td>Pekanbaru</td>
+				            <td>1</td>
+				            <td>Rp. 1.500.000</td>
+				            <td>Rp. 1.500.000</td>
+				          </tr>
+				          <tr>
+				            <td>3</td>
+				            <td>Medan</td>
+				            <td>1</td>
+				            <td>Rp. 1.500.000</td>
+				            <td>Rp. 1.500.000</td>
+				          </tr>
+				          <tr>
+				            <td>4</td>
+				            <td>Padang</td>
+				            <td>1</td>
+				            <td>Rp. 1.500.000</td>
+				            <td>Rp. 1.500.000</td>
+				          </tr>
+				          <tr>
+				            <td>5</td>
+				            <td>Palembang</td>
+				            <td>1</td>
+				            <td>Rp. 1.500.000</td>
+				            <td>Rp. 1.500.000</td>
+				          </tr>
+				          <tr>
+				            <td>6</td>
+				            <td>Lampung</td>
+				            <td>1</td>
+				            <td>Rp. 1.500.000</td>
+				            <td>Rp. 1.500.000</td>
+				          </tr>
+				          <tr>
+				            <td>7</td>
+				            <td>Jakarta</td>
+				            <td>1</td>
+				            <td>Rp. 1.750.000</td>
+				            <td>Rp. 1.750.000</td>
+				          </tr>
+				          <tr>
+				            <td>8</td>
+				            <td>Bandung</td>
+				            <td>1</td>
+				            <td>Rp. 1.750.000</td>
+				            <td>Rp. 1.750.000</td>
+				          </tr>
+				          <tr>
+				            <td>9</td>
+				            <td>Surabaya</td>
+				            <td>1</td>
+				            <td>Rp. 1.750.000</td>
+				            <td>Rp. 1.750.000</td>
+				          </tr>
+				          <tr>
+				            <td>10</td>
+				            <td>Denpasar</td>
+				            <td>1</td>
+				            <td>Rp. 2.000.000</td>
+				            <td>Rp. 2.000.000</td>
+				          </tr>
+				          <tr>
+				            <td>11</td>
+				            <td>Makassar</td>
+				            <td>1</td>
+				            <td>Rp. 3.000.000</td>
+				            <td>Rp. 3.000.000</td>
+				          </tr>
+				          <tr>
+				            <td>12</td>
+				            <td>Jayapura</td>
+				            <td>1</td>
+				            <td>Rp. 3.200.000</td>
+				            <td>Rp. 3.200.000</td>
+				          </tr>
+				        </tbody>
+
+				        <tbody>
+				          <tr>
+				            <td></td>
+				            <td><b>Grand Total</b></td>
+				            <td></td>
+				            <td></td>
+				            <td><b>Rp. 122.700.000</b></td>
+				          </tr>
+				        </tbody>
+
+				        <tbody>
+				          <tr>
+				            <td></td>
+				            <td><b>Harga tidak termasuk</b></td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				          <tr>
+				            <td>1</td>
+				            <td>PPN</td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				          <tr>
+				            <td>2</td>
+				            <td>Annual Maintenance</td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				          <tr>
+				            <td>3</td>
+				            <td>Harga berlaku hingga 1 Januari 2019</td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				        </tbody>
+				        <br><br>
+
+				        <tbody>
+				          <tr>
+				            <td></td>
+				            <td><b>Term of Payment</b></td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				          <tr>
+				            <td></td>
+				            <td>30% DP setelah PO</td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				          <tr>
+				            <td></td>
+				            <td>30% DP setelah SIT</td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				          <tr>
+				            <td></td>
+				            <td>30% DP setelah UAT</td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				          <tr>
+				            <td></td>
+				            <td>30% DP setelah GO Live</td>
+				            <td></td>
+				            <td></td>
+				            <td></td>
+				          </tr>
+				        </tbody>
+				      </table>
+    	</div>
+    	
+        <div class="col m12 center">
+       		<button class="btn waves-effect waves-light" onclick="javascript:demoFromHTML()">Simpan Sebagai PDF</button>
+       		<button class="btn waves-effect waves-light" onclick="Export2Doc('customers');">Simpan Sebagai Word</button>
+       		<button class="btn waves-effect waves-light" onclick="exportTableToExcel('customers')">Simpan Sebagai Excel</button>
         </div> 
-        <div class="col s12 m6">
+
+        	<div class="col m12">
             <div class="card-panel" style="background-color: transparent">
+            	<div class="row center">
+                <h5 class="header black-text col s12">Isi data dibawah ini untuk melengkapi pemesanan</h5>
+            </div>
                 <div class="row">
                     <form class="col s12">
                         <div class="row">
@@ -106,6 +411,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </div>
 
@@ -144,4 +450,115 @@
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 </body>
+<script type="text/javascript">
+	function exportTableToExcel(tableID, filename = ''){
+    var downloadLink;
+    var dataType = 'application/vnd.ms-excel';
+    var tableSelect = document.getElementById(tableID);
+    var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+    
+    // Specify file name
+    filename = filename?filename+'.xls':'Tabel Harga Manajemen Aset.xls';
+    
+    // Create download link element
+    downloadLink = document.createElement("a");
+    
+    document.body.appendChild(downloadLink);
+    
+    if(navigator.msSaveOrOpenBlob){
+        var blob = new Blob(['\ufeff', tableHTML], {
+            type: dataType
+        });
+        navigator.msSaveOrOpenBlob( blob, filename);
+    }else{
+        // Create a link to the file
+        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+    
+        // Setting the file name
+        downloadLink.download = filename;
+        
+        //triggering the function
+        downloadLink.click();
+    }
+}
+</script>
+<script type="text/javascript">
+	function Export2Doc(element, filename = ''){
+    var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+    var postHtml = "</body></html>";
+    var html = preHtml+document.getElementById(element).innerHTML+postHtml;
+
+    var blob = new Blob(['\ufeff', html], {
+        type: 'application/msword'
+    });
+    
+    // Specify link url
+    var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+    
+    // Specify file name
+    filename = filename?filename+'.doc':'Tabel Harga Manajemen Aset.doc';
+    
+    // Create download link element
+    var downloadLink = document.createElement("a");
+
+    document.body.appendChild(downloadLink);
+    
+    if(navigator.msSaveOrOpenBlob ){
+        navigator.msSaveOrOpenBlob(blob, filename);
+    }else{
+        // Create a link to the file
+        downloadLink.href = url;
+        
+        // Setting the file name
+        downloadLink.download = filename;
+        
+        //triggering the function
+        downloadLink.click();
+    }
+    
+    document.body.removeChild(downloadLink);
+}
+</script>
+<script type="text/javascript">
+        function demoFromHTML() {
+            var pdf = new jsPDF('p', 'pt', 'letter');
+            // source can be HTML-formatted string, or a reference
+            // to an actual DOM element from which the text will be scraped.
+            source = $('#customers')[0];
+
+            // we support special element handlers. Register them with jQuery-style 
+            // ID selector for either ID or node name. ("#iAmID", "div", "span" etc.)
+            // There is no support for any other type of selectors 
+            // (class, of compound) at this time.
+            specialElementHandlers = {
+                // element with id of "bypass" - jQuery style selector
+                '#bypassme': function(element, renderer) {
+                    // true = "handled elsewhere, bypass text extraction"
+                    return true
+                }
+            };
+            margins = {
+                top: 20,
+                bottom: 20,
+                left: 20,
+                right: 20,
+                width: 522
+            };
+            // all coords and widths are in jsPDF instance's declared units
+            // 'inches' in this case
+            pdf.fromHTML(
+                    source, // HTML string or DOM elem ref.
+                    margins.left, // x coord
+                    margins.top, {// y coord
+                        'width': margins.width, // max width of content on PDF
+                        'elementHandlers': specialElementHandlers
+                    },
+            function(dispose) {
+                // dispose: object with X, Y of the last line add to the PDF 
+                //          this allow the insertion of new lines after html
+                pdf.save('Tabel Harga Manajemen Aset.pdf');
+            }
+            , margins);
+        }
+    </script>
 </html>
